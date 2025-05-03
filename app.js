@@ -8,9 +8,9 @@ document.getElementById("form").addEventListener("submit", function(event){
         const length = parseInt(document.getElementById("length").value);
         const type = document.querySelector('input[name="type"]:checked').value; // Get the selected radio value
 
-        if (length === ""){
+        if (length < 4 || length > 16){
 
-            alert("Password length must be between 4 and 16.");
+            alert("Please select length first!");
             return;
         }
         

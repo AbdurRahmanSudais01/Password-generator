@@ -28,6 +28,9 @@
         input:focus{
             outline: #dee2e6;
         }
+        span{
+          color: grey;
+        }
     </style>
 </head>
 <body>
@@ -39,7 +42,7 @@
           <label for="inputLength" class="col-sm-2 col-form-label">length</label>
           <div class="col-sm-10">
             <select name="length" id="length" class="form-control">
-                <option value="select">select</option>
+                <option value="0">select</option>
                 <option value="4">4</option>
                 <option value="6">6</option>
                 <option value="8">8</option>
@@ -55,7 +58,7 @@
             <div class="form-check">
               <input class="form-check-input" type="radio" name="type" id="strong" value="strong" checked>
               <label class="form-check-label" for="strong">
-                Strong
+                Strong <span>Include Special Character (#@!><.,';')</span>
               </label>
             </div>
             <div class="form-check">
